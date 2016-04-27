@@ -31,7 +31,7 @@ describe('Crypto',function() {
     expect(crypto.size()).toEqual(4);
   });
 
-  xit('plain text segments',function() {
+  it('plain text segments',function() {
     var crypto = new Crypto('Never vex thine heart with idle woes');
     expect(crypto.plaintextSegments()).toEqual(['neverv', 'exthin', 'eheart', 'withid', 'lewoes']);
   });
